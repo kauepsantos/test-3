@@ -16,16 +16,16 @@ game:GetService("ReplicatedStorage").RE:FindFirstChild(
 local OrionLib = loadstring(game:HttpGet(
                                 "https://you.whimper.xyz/sources/slowed/0"))();
 local Window = OrionLib:MakeWindow({
-    Name = "Slowed Hub",
-    HidePremium = false,
+    Name = "modded_scripts (premium)",
+    HidePremium = true,
     SaveConfig = true,
     ConfigFolder = "XScriptHub",
-    IntroText = "Slowed Studios"
+    IntroText = "modded scripts"
 });
 local CRD = Window:MakeTab({
     Name = "informaÃ§Ãµes",
     Icon = "rbxassetid://15764521947",
-    PremiumOnly = false
+    PremiumOnly = true
 });
 local HH = Window:MakeTab({
     Name = "InÃ­cio",
@@ -45,7 +45,7 @@ local HouseTab = Window:MakeTab({
 local TT = Window:MakeTab({
     Name = "Troll",
     Icon = "rbxassetid://72879917771754",
-    PremiumOnly = false
+    PremiumOnly = true
 });
 local utilitiesTab = Window:MakeTab({
     Name = "ConfiguraÃ§Ãµes",
@@ -55,7 +55,7 @@ local utilitiesTab = Window:MakeTab({
 local Section = CRD:AddSection({Name = "ðŸŽ„ Creator ðŸŽ„"});
 CRD:AddLabel("Dev - Scritp: CodeCraft / MatheuszinZK");
 local function copyText()
-    local textToCopy = "https://discord.gg/25ms";
+    local textToCopy = "tubergamer000";
     setclipboard(textToCopy);
     OrionLib:MakeNotification({
         Name = "Texto Copiado",
@@ -65,7 +65,7 @@ local function copyText()
     });
 end
 CRD:AddButton({
-    Name = "Copiar Link Do nosso Doscord",
+    Name = "nosso canal do youtube",
     Callback = copyText
 });
 local Section = CRD:AddSection({Name = "Jogo Join"});
